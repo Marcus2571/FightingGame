@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS | Fighting Game | Konfu</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="healthBars">
+            <div style="position: relative; width: 100%; display: flex; justify-content: flex-end;">
+                <div class="playerHealth"></div>
+                <div style="height: 30px; width: 100%; background-color: red;"></div>
+            </div>
+            <div class="timer">10</div>
+            <div style="position: relative; height: 30px; width: 100%;">
+                <div class="enemyHealth"></div>
+                <div style="height: 30px; width: 100%; background-color: red;"></div>
+            </div>
+        </div>
+        <div class="abilities" id="playerAbility1">
+            <div>Q</div>
+            <div class="abilityCooldown" id="playerAbility1Cooldown"></div>
+        </div>
+        <div class="abilities" id="enemyAbility1">
+            <div style="transform: rotate(180deg);">O</div>
+            <div class="abilityCooldown" id="enemyAbility1Cooldown"></div>
+        </div>
+        <div class="displayText"></div>
+        
+        
+        
+        <canvas></canvas>
+    </div>
+    <div class="wrapper">
+        <div class="pie spinner"></div>
+        <div class="pie filler"></div>
+        <div class="mask"></div>
+    </div>
+
+    <script src="js/classes.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="index.js"></script> 
+
+</body>
+</html>
